@@ -1,0 +1,86 @@
+/* CONTENT */
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    padding: 10px;
+}
+
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie {
+    width: 80%;
+    border: 2px #d4afba solid;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #ffc6d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.movie:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.desc {
+    width: 40%;
+    text-align: center;
+    background-color: #ffd8e3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img {
+    height: 300px;
+    width: 200px;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .movie {
+        flex-direction: column;
+    }
+
+    .desc {
+        margin: 20px;
+        width: 80%;
+    }
+}
+
+#searchBox {
+    width: 80%;
+    height: 25px;
+    border: 2px #ecd1d9 solid;
+    border-radius: 10vw;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.resultMessage {
+    width: 100%;
+    padding: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #522E38;
+}
+
+.footer {
+    margin-top: 20px
+}

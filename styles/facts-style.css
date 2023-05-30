@@ -1,0 +1,170 @@
+
+.DUN-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing';
+}
+
+.facts-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin-top: 5vw;
+    display: none;
+    justify-content: center;
+    animation-name: show-facts;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.facts-card {
+    background-color: #fdeff3;
+    border: 2px #522E38 solid;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .facts-card {
+        width: 80vw;
+    }
+}
+
+.facts-card .DUN-container {
+    transform: scale(0.4);
+    text-shadow: 0px 0px 50px;
+}
+
+.facts-card .question-mark {
+    font-size: 350px;
+}
+
+.facts-card .DUN-text {
+    font-size: 90px;
+}
+
+#facts-text {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#btnClose {
+    background-color: #fdeff3;
+    color: #522E38;
+    border: 2px #522E38 solid;
+    border-radius: 20px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+#btnClose:hover {
+    transition: ease 0.7s;
+    background-color: #522E38;
+    color: #fdeff3;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    font-size: 1.2em ;
+    text-align: center;
+    padding: 20px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    line-height: 2;
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 550px) {
+    .text-container {
+        line-height: 1.5;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+.box {
+    color: #e786a3;
+    width: 400px;
+    height: 400px;
+    background-color: #FFE0E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px #e786a3 solid;
+    border-radius: 20px;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    margin-bottom: 5vw;
+}
+
+.question-mark {
+    font-size: 15em;
+}
+
+.DUN-text {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 750px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .box {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .question-mark {
+        font-size: 45vw;
+    }
+    
+    .DUN-text {
+        font-size: 15vw;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes box-shake-hov {
+    10% {transform: rotate(5deg)}
+    15% {transform: rotate(-5deg)}
+    20% {transform: rotate(5deg)}
+    25% {transform: rotate(-5deg)}
+    30% {transform: rotate(5deg)}
+    35% {transform: rotate(-5deg)}
+    40% {transform: rotate(5deg)}
+    45% {transform: rotate(-5deg)}
+    50% {transform: rotate(5deg)}
+    55% {transform: rotate(-5deg)}
+    60% {transform: rotate(5deg)}
+    65% {transform: rotate(-5deg)}
+    70% {transform: rotate(5deg)}
+    75% {transform: rotate(-5deg)}
+    80% {transform: rotate(5deg)}
+    85% {transform: rotate(-5deg)}
+    90% {transform: rotate(5deg)}
+    95% {transform: rotate(-5deg)}
+    100% {transform: rotate(5deg)}
+}
+
+@keyframes show-facts {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
